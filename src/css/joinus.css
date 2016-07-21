@@ -1,0 +1,145 @@
+body {
+  background-color: #000;
+  color: #6d5417;
+}
+.wraper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.wraper2 {
+  width: 1920px;
+  margin: 0 auto;
+}
+.fonts16 {
+  font-size: 16px;
+}
+.fonts18 {
+  font-size: 18px;
+}
+.fonts24 {
+  font-size: 24px;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #414141;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #414141;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #414141;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #414141;
+}
+/*头部header*/
+.header {
+  display: none;
+  width: 100%;
+  min-width: 1200px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+}
+.header ul {
+  display: inline-block;
+}
+.header ul li {
+  float: left;
+  width: 180px;
+}
+.header ul li a {
+  display: block;
+  padding: 20px 0;
+  color: #bfbfbf;
+}
+/*底部footer*/
+.footer {
+  margin: 120px 0;
+}
+.footer .leftbar {
+  width: 420px;
+  margin-left: 100px;
+}
+.footer .leftbar .stj-ch {
+  margin-bottom: 50px;
+}
+.footer .leftbar .phone1 {
+  margin-bottom: 20px;
+}
+.footer .leftbar .phone2 {
+  margin-bottom: 40px;
+}
+.footer .leftbar .guanwang1 {
+  margin-bottom: 20px;
+}
+.footer .leftbar .guanwang2 {
+  margin-bottom: 100px;
+}
+.footer .leftbar .adress1 {
+  margin-bottom: 60px;
+}
+.footer .leftbar .adress2 {
+  margin-bottom: 20px;
+}
+.footer .leftbar .adress3 {
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+.footer .leftbar .gzphone1 {
+  margin-bottom: 20px;
+}
+.footer .leftbar .gzphone2 {
+  margin-bottom: 150px;
+}
+.footer .rightbar {
+  width: 300px;
+  margin-right: 100px;
+}
+.footer .rightbar input {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 2px solid #403502;
+  background-color: #000;
+  color: #414141;
+  padding-left: 20px;
+}
+.footer .rightbar textarea {
+  width: 260px;
+  height: 190px;
+  border-radius: 50px;
+  border: 2px solid #403502;
+  background-color: #000;
+  outline: none;
+  margin: 20px 0 40px 0;
+  padding: 30px 20px;
+  text-align: left;
+  color: #414141;
+  font-size: 14px;
+  overflow: auto;
+}
+.footer .rightbar button {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  background-color: #6d5417;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.footer .footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 120px;
+  border-top: 1px solid #6d5417;
+  text-align: center;
+}

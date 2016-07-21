@@ -1,0 +1,38 @@
+{
+  "name": "migu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "amd-optimize": "latest",
+    "debug": "latest",
+    "gulp": "latest",
+    "gulp-asset-rev-jade": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-dest": "latest",
+    "gulp-less": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rev": "latest",
+    "gulp-rev-collector": "latest",
+    "gulp-rimraf": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "mocha": "latest",
+    "del": "latest",
+    "gulp-if" :"latest",
+    "run-sequence": "latest",
+    "gulp-csslint":"latest",
+    "gulp-changed":"latest",
+    "gulp-jshint": "latest",
+    "jshint-stylish":"latest",
+    "gulp-minify-html":"latest",
+    "gulp-autoprefixer":"latest",
+    "gulp-requirejs ":"latest"
+  }
+}

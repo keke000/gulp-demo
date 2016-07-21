@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>品牌展区</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/joinus.css">
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li>
+                <a href="index.html">HOME<br/><br/>首页 </a>
+            </li>
+            <li>
+                <a href="stores.html">STORES<br/><br/>品牌橱窗 </a>
+            </li>
+            <li>
+                <a href="show.html">SHOW<br/><br/>品牌展区 </a>
+            </li>
+            <li>
+                <a href="new.html">NEW<br/><br/>新闻资讯 </a>
+            </li>
+            <li>
+                <a href="reputation.html">REPUTATION <br/><br/>品牌评价 </a>
+            </li>
+            <li>
+                <a href="joinus.html">JOINUS<br/><br/>加入我们</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content clearfix">
+        <div class="wraper2">
+            <img src="images/joinus/01.jpg">
+            <img src="images/joinus/02.jpg">
+            <img src="images/joinus/03.jpg">
+            <img src="images/joinus/04.jpg">
+            <img src="images/joinus/05.jpg">
+            <img src="images/joinus/06.jpg">
+            <img src="images/joinus/07.jpg">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wraper">
+            <div class="footer-top clearfix">
+                <div class="leftbar fl">
+                    <p class="stj-ch fonts16">斯特嘉（中国）运营总部</p>
+                    <p class="phone1 fonts16">全国免费咨询热线</p>
+                    <p class="phone2 fonts24">400-805-9908</p>
+                    <p class="guanwang1 fonts16">官网</p>
+                    <p class="guanwang2 fonts24">www.scidaca.cn</p>
+                    <p class="adress1 fonts16">广州生产基地</p>
+                    <p class="adress2 fonts16">地址</p>
+                    <p class="adress3 fonts18">广州市花都区狮岭镇盘古王路口山前大道嘉源实业</p>
+                    <p class="gzphone1 fonts16">联系电话</p>
+                    <p class="gzphone2 fonts24">400-805-9908</p>
+                </div>
+                <div class="rightbar fr">
+                    <input class="input" type="text" placeholder="请输入姓名">
+                    <input class="input" type="text" placeholder="请输入手机号码（必填）">
+                    <input class="input" type="text" placeholder="请输入邮箱">
+                    <textarea placeholder="请输入留言内容"></textarea>
+                    <button>提交</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy;SCIDACA（中国）
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    //修复placeholder
+    var JPlaceHolder = {
+        //检测
+        _check : function(){
+            return 'placeholder' in document.createElement('input');
+        },
+        //初始化
+        init : function(){
+            if(!this._check()){
+                this.fix();
+            }
+        },
+        //修复
+        fix : function(){
+            jQuery('.input').each(function(index, element) {
+                var self = $(this), txt = self.attr('placeholder');
+                self.wrap($('<div></div>').css({position:'relative', zoom:'1', border:'none', background:'none', padding:'none', margin:'none'}));
+                var pos = self.position(), h = self.outerHeight(true), paddingleft = self.css('padding-left');
+                var holder = $('<span></span>').text(txt).css({position:'absolute', left:pos.left+20, top:pos.top+20, height:h, lienHeight:h, paddingLeft:paddingleft, color:'#aaa'}).appendTo(self.parent());
+                self.focusin(function(e) {
+                    holder.hide();
+                }).focusout(function(e) {
+                    if(!self.val()){
+                        holder.show();
+                    }
+                });
+                holder.click(function(e) {
+                    holder.hide();
+                    self.focus();
+                });
+            });
+        }
+    };
+    $(function(){
+        $(document).scroll(function(){
+            var scroll = $(document).scrollTop();
+            if(scroll>100){
+                $(".header").fadeIn(1000);
+            }else{
+                $(".header").fadeOut(1000);
+            }
+        })
+        JPlaceHolder.init(); 
+    })
+</script>
+</html>
